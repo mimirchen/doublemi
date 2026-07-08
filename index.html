@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DoubleMi — AI, your double</title>
+<meta name="description" content="DoubleMi:一间做「另一个你」的 AI 产品工作室。Small, beautiful AI products — each one a double of you. Made in Zürich.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1A1B1E; --bg-deep:#141518; --cream:#ECEAE3; --muted:#9C9C93; --faint:#6E6E67;
+    --seal:#CE4A33; --hair:rgba(236,234,227,0.16); --hair-soft:rgba(236,234,227,0.08);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--cream);font-family:"Instrument Sans","Noto Sans SC",-apple-system,"PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7;overflow-x:hidden}
+  ::selection{background:var(--seal);color:var(--cream)}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid var(--hair-soft)}
+  .wordmark{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream)}
+  .wordmark span{font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:17px;letter-spacing:.02em}
+  .wordmark span i{font-style:normal;color:var(--seal)}
+  .lang-toggle{background:none;border:1px solid var(--hair);border-radius:999px;color:var(--muted);font-family:inherit;font-size:11.5px;letter-spacing:.08em;padding:5px 12px;cursor:pointer;transition:all .25s}
+  .lang-toggle:hover{color:var(--cream);border-color:var(--cream)}
+
+  header{padding:110px 0 80px;text-align:center}
+  .logomark{margin:0 auto 34px;display:block}
+  h1{font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:clamp(38px,6vw,64px);letter-spacing:.01em;line-height:1.1}
+  h1 i{font-style:normal;color:var(--seal)}
+  h1 .cn{display:block;font-family:"Noto Serif SC",serif;font-weight:400;font-size:.42em;letter-spacing:.5em;color:var(--muted);margin-top:16px;text-indent:.5em}
+  .hero-tag{margin:30px auto 0;max-width:560px;color:var(--muted);font-size:16px}
+  .hero-tag em{font-family:"Cormorant Garamond",Georgia,serif;color:var(--cream);font-size:1.12em}
+  .story{margin:56px auto 0;max-width:520px;border:1px solid var(--hair-soft);border-radius:3px;padding:26px 30px;font-size:14px;color:var(--muted);text-align:left}
+  .story b{color:var(--cream);font-weight:500}
+  .story .mi{color:var(--seal)}
+
+  section{padding:72px 0;border-top:1px solid var(--hair-soft)}
+  .sec-label{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);margin-bottom:12px}
+  .sec-title{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;font-size:clamp(25px,3.2vw,36px);margin-bottom:14px}
+
+  .products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  @media(max-width:820px){.products{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}}
+  .product{border:1px solid var(--hair);border-radius:3px;background:var(--bg-deep);padding:28px 26px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--cream);transition:border-color .3s;position:relative}
+  a.product:hover{border-color:rgba(236,234,227,.45)}
+  .product .no{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
+  .product .name{font-family:"Noto Serif SC",serif;font-size:21px}
+  .product .name .en{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--muted);font-size:17px;margin-left:8px}
+  .product .desc{font-size:13.5px;color:var(--muted);flex:1}
+  .product .status{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--seal)}
+  .product.tbd{opacity:.66}
+  .product.tbd .status{color:var(--faint)}
+  .product svg.thumb{width:64px;height:64px;margin-bottom:6px}
+
+  .manifesto{max-width:620px}
+  .manifesto p{color:var(--muted);font-size:15px;margin-top:14px}
+  .manifesto p b{color:var(--cream);font-weight:500}
+
+  .notify{text-align:center}
+  .notify .row{display:flex;gap:10px;max-width:440px;margin:28px auto 0}
+  .field{flex:1;background:transparent;border:1px solid var(--hair);border-radius:2px;color:var(--cream);font-family:inherit;font-size:15px;padding:13px 16px;outline:none;transition:border-color .3s}
+  .field:focus{border-color:rgba(236,234,227,.38)}
+  .field::placeholder{color:var(--faint)}
+  .btn{appearance:none;border:1px solid var(--seal);background:var(--seal);color:#F5EFE4;font-family:inherit;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:13px 24px;cursor:pointer;border-radius:2px;transition:opacity .25s}
+  .btn:hover{opacity:.85}
+  .note{font-size:12px;color:var(--faint);margin-top:12px;min-height:16px}
+
+  footer{border-top:1px solid var(--hair-soft);padding:42px 0 60px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--faint);letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <a class="wordmark" href="#">
+      <svg width="30" height="26" viewBox="0 0 30 26" aria-hidden="true">
+        <path d="M2 24 L9 4 L15 20 L21 4 L24.5 14" fill="none" stroke="#ECEAE3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="27" cy="23" r="2.6" fill="#CE4A33"/>
+      </svg>
+      <span>double<i>mi</i></span>
+    </a>
+    <button class="lang-toggle" onclick="toggleLang()">EN</button>
+  </nav>
+
+  <header>
+    <svg class="logomark" width="120" height="104" viewBox="0 0 120 104" aria-label="DoubleMi logomark: two A's leaning together make an M; the red dot is you">
+      <path d="M8 96 L36 16 L60 80 L84 16 L98 56" fill="none" stroke="#ECEAE3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="108" cy="92" r="8" fill="#CE4A33"/>
+    </svg>
+    <h1>double<i>mi</i><span class="cn" data-l="h1cn">另一个你</span></h1>
+    <p class="hero-tag">
+      <em data-l="en">AI, your double.</em><br>
+      <span data-l="zh">每个人,都值得多一个自己。</span>
+      <span data-l="en2">Small, beautiful AI products — each one a double of you.</span>
+    </p>
+    <div class="story">
+      <span data-l="story-zh"><b>Double <span class="mi">Mi</span></b> 读作 "double me"——AI 是<b>另一个你</b>。字母 <b>M</b>,本就是两个 A 靠在一起;那颗<span class="mi">红点</span>,是你。</span>
+      <span data-l="story-en"><b>Double <span class="mi">Mi</span></b> reads "double me" — AI as your other self. The letter <b>M</b> is two A's leaning together; the <span class="mi">red dot</span> is you.</span>
+    </div>
+  </header>
+
+  <!-- ================= products ================= -->
+  <section>
+    <div class="sec-label">Products · 出品</div>
+    <h2 class="sec-title" data-l="pt">每个产品,都是你的一个分身</h2>
+    <div class="products">
+      <a class="product" href="https://dream.doublemi.ai" id="p001">
+        <svg class="thumb" viewBox="0 0 64 64">
+          <g stroke="#ECEAE3" fill="none" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+            <ellipse cx="32" cy="32" rx="26" ry="27"/>
+            <path d="M 36,16 A 15 15 0 1 0 36,46 A 11.5 11.5 0 1 1 36,16 Z"/>
+            <circle cx="20" cy="20" r=".8" fill="#ECEAE3"/><circle cx="46" cy="40" r=".8" fill="#ECEAE3"/>
+          </g>
+        </svg>
+        <div class="no">Product 001</div>
+        <div class="name">觅梦<span class="en">Dream Atlas</span></div>
+        <div class="desc" data-l="p1d">替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。</div>
+        <div class="status">Beta · Free</div>
+      </a>
+      <div class="product tbd">
+        <svg class="thumb" viewBox="0 0 64 64"><g stroke="#6E6E67" fill="none" stroke-width="1.6" stroke-linecap="round"><ellipse cx="32" cy="32" rx="26" ry="27" stroke-dasharray="3 5"/><text x="32" y="38" text-anchor="middle" fill="#6E6E67" stroke="none" font-size="16" font-family="Cormorant Garamond,serif" font-style="italic">?</text></g></svg>
+        <div class="no">Product 002</div>
+        <div class="name" data-l="p2n">在制版中</div>
+        <div class="desc" data-l="p2d">下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。</div>
+        <div class="status" data-l="p2s">In the making</div>
+      </div>
+      <div class="product tbd">
+        <svg class="thumb" viewBox="0 0 64 64"><g stroke="#6E6E67" fill="none" stroke-width="1.6" stroke-linecap="round"><ellipse cx="32" cy="32" rx="26" ry="27" stroke-dasharray="3 5"/></g></svg>
+        <div class="no">Product 003</div>
+        <div class="name">—</div>
+        <div class="desc" data-l="p3d">好产品要一个一个做。</div>
+        <div class="status" data-l="p3s">Later</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= manifesto ================= -->
+  <section>
+    <div class="sec-label">Manifesto · 三句话</div>
+    <h2 class="sec-title" data-l="mt">小,但是美;美,但是有用</h2>
+    <div class="manifesto">
+      <p data-l="m1"><b>做小的。</b>一个产品只解决一个痛点,解决到让人想送给朋友。</p>
+      <p data-l="m2"><b>做美的。</b>AI 产品不必长得像仪表盘;它可以像一件你愿意留下的东西。</p>
+      <p data-l="m3"><b>做你的。</b>数据属于你,随时可带走;没有广告,不卖数据,永远。</p>
+    </div>
+  </section>
+
+  <!-- ================= notify ================= -->
+  <section class="notify">
+    <h2 class="sec-title" data-l="nt">新分身出炉时,告诉你</h2>
+    <div class="row">
+      <input type="email" class="field" id="nEmail" placeholder="你的邮箱" data-ph-zh="你的邮箱" data-ph-en="your@email.com">
+      <button class="btn" id="nBtn" data-l="nb">订阅出品通知</button>
+    </div>
+    <p class="note" id="nNote"></p>
+  </section>
+
+  <footer>
+    <span>© 2026 DoubleMi · Made in Zürich</span>
+    <span>doublemi.ai</span>
+  </footer>
+</div>
+
+<script>
+/* ---- config: paste the SAME Supabase project as the products (shared accounts & lists) ---- */
+const CFG = { SUPABASE_URL: "https://gvuhoeaaykbycscxkzqg.supabase.co", SUPABASE_ANON_KEY: "sb_publishable_OFfHETOEGJAJ7nO8m9W3Lg_qUcD9RRz" };
+
+/* ---- tiny i18n ---- */
+const L = {
+  zh: {
+    h1cn: "另一个你",
+    en: "AI, your double.", zh: "每个人,都值得多一个自己。", en2: "",
+    pt: "每个产品,都是你的一个分身",
+    p1d: "替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。",
+    p2n: "在制版中", p2d: "下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。", p2s: "In the making",
+    p3d: "好产品要一个一个做。", p3s: "Later",
+    mt: "小,但是美;美,但是有用",
+    m1: "做小的。一个产品只解决一个痛点,解决到让人想送给朋友。",
+    m2: "做美的。AI 产品不必长得像仪表盘;它可以像一件你愿意留下的东西。",
+    m3: "做你的。数据属于你,随时可带走;没有广告,不卖数据,永远。",
+    nt: "新分身出炉时,告诉你", nb: "订阅出品通知",
+    ok: "已登记。下一个分身出炉时见。", err: "没登记上——再试一次?", local: "(云端未连接,邮箱暂存在此浏览器)"
+  },
+  en: {
+    h1cn: "",
+    en: "AI, your double.", zh: "", en2: "Small, beautiful AI products — each one a double of you.",
+    pt: "Every product is a double of you",
+    p1d: "The you that keeps your nights: speak last night's dream, receive an engraved plate, compile your Dream Atlas.",
+    p2n: "On the press", p2d: "The next double is being etched. Leave your email to hear first.", p2s: "In the making",
+    p3d: "Good products are made one at a time.", p3s: "Later",
+    mt: "Small, but beautiful; beautiful, but useful",
+    m1: "Make it small. One product, one pain — solved so well you'd gift it to a friend.",
+    m2: "Make it beautiful. AI needn't look like a dashboard; it can be a thing you'd keep.",
+    m3: "Make it yours. Your data belongs to you, exportable anytime; no ads, no data sales, ever.",
+    nt: "Hear when the next double arrives", nb: "Get launch notes",
+    ok: "You're in. See you at the next unveiling.", err: "That didn't go through — try again?", local: "(cloud not connected yet: stored in this browser)"
+  }
+};
+let lang = localStorage.getItem("dm.lang") || ((navigator.language||"en").toLowerCase().startsWith("zh") ? "zh" : "en");
+function applyLang(){
+  document.querySelectorAll("[data-l]").forEach(el=>{
+    const k = el.dataset.l.replace(/^story-/, "");
+    if (el.dataset.l.startsWith("story-")) { el.style.display = el.dataset.l === "story-"+lang ? "inline" : "none"; return; }
+    const v = L[lang][el.dataset.l];
+    if (v !== undefined) { el.textContent = v; el.style.display = v === "" ? "none" : ""; }
+  });
+  const em = document.getElementById("nEmail");
+  em.placeholder = em.dataset["ph"+(lang==="zh"?"Zh":"En")];
+  document.querySelector(".lang-toggle").textContent = lang === "zh" ? "EN" : "中文";
+  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+}
+function toggleLang(){ lang = lang === "zh" ? "en" : "zh"; localStorage.setItem("dm.lang", lang); applyLang(); }
+applyLang();
+
+/* ---- launch-notes list (shared waitlist table, source: doublemi) ---- */
+async function join(){
+  const email = document.getElementById("nEmail").value.trim();
+  const note = document.getElementById("nNote");
+  if (!email || !email.includes("@")) { document.getElementById("nEmail").focus(); return; }
+  if (CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY) {
+    try {
+      const r = await fetch(CFG.SUPABASE_URL + "/rest/v1/waitlist", {
+        method: "POST",
+        headers: { apikey: CFG.SUPABASE_ANON_KEY, Authorization: "Bearer " + CFG.SUPABASE_ANON_KEY, "Content-Type": "application/json", Prefer: "return=minimal" },
+        body: JSON.stringify({ email, locale: lang, source: "doublemi" })
+      });
+      note.textContent = (r.ok || r.status === 409) ? L[lang].ok : L[lang].err;
+    } catch (e) { note.textContent = L[lang].err; }
+  } else {
+    let l; try { l = JSON.parse(localStorage.getItem("dm.waitlist"))||[] } catch(e){ l=[] }
+    if (!l.includes(email)) l.push(email);
+    localStorage.setItem("dm.waitlist", JSON.stringify(l));
+    note.textContent = L[lang].ok + " " + L[lang].local;
+  }
+  document.getElementById("nEmail").value = "";
+}
+document.getElementById("nBtn").addEventListener("click", join);
+document.getElementById("nEmail").addEventListener("keydown", e => { if (e.key === "Enter") join(); });
+</script>
+</body>
+</html>
