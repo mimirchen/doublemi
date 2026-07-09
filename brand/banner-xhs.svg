@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1C1D21"/>
+      <stop offset="100%" stop-color="#101114"/>
+    </radialGradient>
+  </defs>
+  <rect width="1500" height="1000" fill="url(#glow)"/>
+
+  <!-- etched stars -->
+  <g fill="#ECEAE3">
+    <circle cx="150" cy="140" r="2.2" opacity=".5"/><circle cx="420" cy="90" r="1.6" opacity=".35"/>
+    <circle cx="700" cy="150" r="1.8" opacity=".4"/><circle cx="980" cy="80" r="2.4" opacity=".5"/>
+    <circle cx="1240" cy="150" r="1.5" opacity=".3"/><circle cx="1400" cy="240" r="2" opacity=".45"/>
+    <circle cx="90" cy="420" r="1.5" opacity=".3"/><circle cx="1340" cy="470" r="1.7" opacity=".35"/>
+    <circle cx="560" cy="230" r="1.4" opacity=".3"/><circle cx="1120" cy="260" r="1.5" opacity=".3"/>
+    <circle cx="250" cy="600" r="1.6" opacity=".25"/><circle cx="1420" cy="640" r="1.5" opacity=".25"/>
+  </g>
+
+  <!-- 觅梦: crescent moon, etched -->
+  <g stroke="#ECEAE3" fill="none" stroke-width="4" stroke-linecap="round" opacity=".75" transform="translate(210,240) scale(1.9)">
+    <ellipse cx="32" cy="32" rx="26" ry="27"/>
+    <path d="M 36,16 A 15 15 0 1 0 36,46 A 11.5 11.5 0 1 1 36,16 Z"/>
+    <circle cx="20" cy="20" r=".9" fill="#ECEAE3"/><circle cx="46" cy="40" r=".9" fill="#ECEAE3"/>
+  </g>
+
+  <!-- 领路人: lantern flame, etched -->
+  <g stroke="#ECEAE3" fill="none" stroke-width="4" stroke-linecap="round" opacity=".75" transform="translate(1170,240) scale(1.9)">
+    <ellipse cx="32" cy="32" rx="26" ry="27"/>
+    <path d="M32 17 v5"/>
+    <path d="M32 43 c-5.5 -3.5 -6 -10 0 -17 c6 7 5.5 13.5 0 17 Z"/>
+    <circle cx="32" cy="47.5" r=".9" fill="#ECEAE3"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="750" y="415" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="148" fill="#ECEAE3">double<tspan fill="#CE4A33">mi</tspan></text>
+
+  <!-- M logomark small, between wordmark and tagline -->
+  <g transform="translate(714,470) scale(0.62)" stroke="#ECEAE3" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M8 96 L36 16 L60 80 L84 16 L98 56"/>
+    <circle cx="108" cy="92" r="8" fill="#CE4A33" stroke="none"/>
+  </g>
+
+  <!-- tagline -->
+  <text x="750" y="640" text-anchor="middle" font-family="'Songti SC','Noto Serif SC',serif" font-size="54" letter-spacing="14" fill="#9C9C93">每个人，都值得多一个自己</text>
+  <text x="750" y="712" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="34" letter-spacing="3" fill="#6E6E67">AI, your double. · doublemi.ai</text>
+
+  <!-- hairline -->
+  <rect x="718" y="756" width="64" height="1.5" fill="#ECEAE3" opacity=".22"/>
+</svg>
