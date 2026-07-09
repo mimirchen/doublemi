@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="1656" viewBox="0 0 1242 1656">
+  <rect width="1242" height="1656" fill="#1A1B1E"/>
+  <g stroke="#ECEAE3" fill="none" stroke-width="4" stroke-linecap="round" opacity=".85" transform="translate(500,170) scale(1.9)">
+    <ellipse cx="32" cy="32" rx="26" ry="27"/>
+    <path d="M 36,16 A 15 15 0 1 0 36,46 A 11.5 11.5 0 1 1 36,16 Z"/>
+    <circle cx="20" cy="20" r=".9" fill="#ECEAE3"/><circle cx="46" cy="40" r=".9" fill="#ECEAE3"/>
+  </g>
+  <text x="621" y="520" text-anchor="middle" font-family="'Songti SC',serif" font-size="72" letter-spacing="10" fill="#ECEAE3">把你昨夜的梦告诉我</text>
+  <text x="621" y="640" text-anchor="middle" font-family="'Songti SC',serif" font-size="72" letter-spacing="10" fill="#ECEAE3">馆长刻成铜版画送你</text>
+  <rect x="589" y="710" width="64" height="2" fill="#CE4A33" opacity=".8"/>
+  <text x="621" y="840" text-anchor="middle" font-family="'Songti SC',serif" font-size="46" letter-spacing="4" fill="#9C9C93">① 评论区写下你最近的一个梦</text>
+  <text x="621" y="930" text-anchor="middle" font-family="'Songti SC',serif" font-size="46" letter-spacing="4" fill="#9C9C93">② 每天挑几个,刻成铜版画回复你</text>
+  <text x="621" y="1020" text-anchor="middle" font-family="'Songti SC',serif" font-size="46" letter-spacing="4" fill="#9C9C93">③ 愿意的话,挂进「今夜展厅」</text>
+  <text x="621" y="1220" text-anchor="middle" font-family="'Songti SC',serif" font-size="54" letter-spacing="14" fill="#CE4A33">梦不分好坏,月亮都收</text>
+  <text x="621" y="1480" text-anchor="middle" font-family="'Songti SC',serif" font-size="36" letter-spacing="8" fill="#6E6E67">觅梦 Dream Atlas</text>
+</svg>

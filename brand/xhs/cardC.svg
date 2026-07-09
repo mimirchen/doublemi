@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="1656" viewBox="0 0 1242 1656">
+  <rect width="1242" height="1656" fill="#16171A"/>
+  <text x="621" y="300" text-anchor="middle" font-family="'Songti SC',serif" font-size="96" letter-spacing="30" fill="#ECEAE3">回 音 廊</text>
+  <text x="621" y="380" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="40" letter-spacing="4" fill="#9C9C93">The Echo Gallery</text>
+  <rect x="140" y="500" width="962" height="560" rx="8" fill="#1C1D21" stroke="#ECEAE3" stroke-opacity=".1"/>
+  <text x="200" y="620" font-family="'Songti SC',serif" font-size="46" fill="#ECEAE3">同路人匿名写下的"一段路":</text>
+  <text x="200" y="720" font-family="'Songti SC',serif" font-size="42" fill="#9C9C93">一次低谷、一次转折、</text>
+  <text x="200" y="790" font-family="'Songti SC',serif" font-size="42" fill="#9C9C93">一次熄火之后的重新点火。</text>
+  <text x="200" y="905" font-family="'Songti SC',serif" font-size="38" fill="#6E6E67">— 同路人</text>
+  <g transform="translate(742,940)">
+    <rect width="220" height="76" rx="38" fill="none" stroke="#C9A227" stroke-width="3"/>
+    <text x="110" y="51" text-anchor="middle" font-family="'Songti SC',serif" font-size="38" fill="#C9A227">同路 · 12</text>
+  </g>
+  <text x="621" y="1230" text-anchor="middle" font-family="'Songti SC',serif" font-size="48" letter-spacing="6" fill="#ECEAE3">你点一下「同路」</text>
+  <text x="621" y="1320" text-anchor="middle" font-family="'Songti SC',serif" font-size="48" letter-spacing="6" fill="#ECEAE3">对方就知道:这条路上不止一个人</text>
+  <text x="621" y="1500" text-anchor="middle" font-family="'Songti SC',serif" font-size="36" letter-spacing="8" fill="#6E6E67">领路人 · 回音廊</text>
+</svg>

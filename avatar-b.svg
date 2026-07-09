@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#16171A"/>
+  <g transform="translate(260,220) scale(4.2)">
+    <path d="M8 96 L36 16 L60 80 L84 16 L98 56" fill="none" stroke="#ECEAE3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="108" cy="92" r="8" fill="#CE4A33"/>
+  </g>
+  <text x="512" y="800" text-anchor="middle" font-family="Songti SC, Noto Serif SC, serif" font-size="86" letter-spacing="26" fill="#9C9C93">另一个你</text>
+</svg>
