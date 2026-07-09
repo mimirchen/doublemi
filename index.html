@@ -104,7 +104,21 @@
     <div class="sec-label">Products · 出品</div>
     <h2 class="sec-title" data-l="pt">每个产品,都是你的一个分身</h2>
     <div class="products">
-      <a class="product" href="https://dream.doublemi.ai" id="p001">
+      <a class="product" href="https://mentor.doublemi.ai" id="p001">
+        <svg class="thumb" viewBox="0 0 64 64">
+          <g stroke="#ECEAE3" fill="none" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+            <ellipse cx="32" cy="32" rx="26" ry="27"/>
+            <path d="M32 17 v5"/>
+            <path d="M32 43 c-5.5 -3.5 -6 -10 0 -17 c6 7 5.5 13.5 0 17 Z"/>
+            <circle cx="32" cy="47.5" r=".8" fill="#ECEAE3"/>
+          </g>
+        </svg>
+        <div class="no">Product 001</div>
+        <div class="name">领路人<span class="en">The Mentor</span></div>
+        <div class="desc" data-l="p1d">替你校准的你:当成长曲线变平,一位记得你弧线的领路人,每周陪你校准一次方向。</div>
+        <div class="status">Private Beta</div>
+      </a>
+      <a class="product" href="https://dream.doublemi.ai" id="p002">
         <svg class="thumb" viewBox="0 0 64 64">
           <g stroke="#ECEAE3" fill="none" stroke-width="1.6" stroke-linecap="round" opacity=".9">
             <ellipse cx="32" cy="32" rx="26" ry="27"/>
@@ -112,24 +126,17 @@
             <circle cx="20" cy="20" r=".8" fill="#ECEAE3"/><circle cx="46" cy="40" r=".8" fill="#ECEAE3"/>
           </g>
         </svg>
-        <div class="no">Product 001</div>
+        <div class="no">Product 002</div>
         <div class="name">觅梦<span class="en">Dream Atlas</span></div>
-        <div class="desc" data-l="p1d">替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。</div>
+        <div class="desc" data-l="p2d">替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。</div>
         <div class="status">Beta · Free</div>
       </a>
       <div class="product tbd">
         <svg class="thumb" viewBox="0 0 64 64"><g stroke="#6E6E67" fill="none" stroke-width="1.6" stroke-linecap="round"><ellipse cx="32" cy="32" rx="26" ry="27" stroke-dasharray="3 5"/><text x="32" y="38" text-anchor="middle" fill="#6E6E67" stroke="none" font-size="16" font-family="Cormorant Garamond,serif" font-style="italic">?</text></g></svg>
-        <div class="no">Product 002</div>
-        <div class="name" data-l="p2n">在制版中</div>
-        <div class="desc" data-l="p2d">下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。</div>
-        <div class="status" data-l="p2s">In the making</div>
-      </div>
-      <div class="product tbd">
-        <svg class="thumb" viewBox="0 0 64 64"><g stroke="#6E6E67" fill="none" stroke-width="1.6" stroke-linecap="round"><ellipse cx="32" cy="32" rx="26" ry="27" stroke-dasharray="3 5"/></g></svg>
         <div class="no">Product 003</div>
-        <div class="name">—</div>
-        <div class="desc" data-l="p3d">好产品要一个一个做。</div>
-        <div class="status" data-l="p3s">Later</div>
+        <div class="name" data-l="p3n">在制版中</div>
+        <div class="desc" data-l="p3d">下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。</div>
+        <div class="status" data-l="p3s">In the making</div>
       </div>
     </div>
   </section>
@@ -171,9 +178,9 @@ const L = {
     h1cn: "另一个你",
     en: "AI, your double.", zh: "每个人,都值得多一个自己。", en2: "",
     pt: "每个产品,都是你的一个分身",
-    p1d: "替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。",
-    p2n: "在制版中", p2d: "下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。", p2s: "In the making",
-    p3d: "好产品要一个一个做。", p3s: "Later",
+    p1d: "替你校准的你:当成长曲线变平,一位记得你弧线的领路人,每周陪你校准一次方向。",
+    p2d: "替你守夜的你:说出昨夜的梦,收下为你镌刻的铜版画,攒成一本梦境图册。",
+    p3n: "在制版中", p3d: "下一个分身正在蚀刻。留下邮箱,出炉时第一个告诉你。", p3s: "In the making",
     mt: "小,但是美;美,但是有用",
     m1: "做小的。一个产品只解决一个痛点,解决到让人想送给朋友。",
     m2: "做美的。AI 产品不必长得像仪表盘;它可以像一件你愿意留下的东西。",
@@ -185,9 +192,9 @@ const L = {
     h1cn: "",
     en: "AI, your double.", zh: "", en2: "Small, beautiful AI products — each one a double of you.",
     pt: "Every product is a double of you",
-    p1d: "The you that keeps your nights: speak last night's dream, receive an engraved plate, compile your Dream Atlas.",
-    p2n: "On the press", p2d: "The next double is being etched. Leave your email to hear first.", p2s: "In the making",
-    p3d: "Good products are made one at a time.", p3s: "Later",
+    p1d: "The you that keeps your compass: when the growth curve flattens, a mentor who remembers your arc calibrates with you, weekly.",
+    p2d: "The you that keeps your nights: speak last night's dream, receive an engraved plate, compile your Dream Atlas.",
+    p3n: "On the press", p3d: "The next double is being etched. Leave your email to hear first.", p3s: "In the making",
     mt: "Small, but beautiful; beautiful, but useful",
     m1: "Make it small. One product, one pain — solved so well you'd gift it to a friend.",
     m2: "Make it beautiful. AI needn't look like a dashboard; it can be a thing you'd keep.",
