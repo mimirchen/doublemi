@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>指尖临江仙 · 国画美甲 — DoubleMi</title>
+<meta name="description" content="指尖临江仙:基于何江国画的五套美甲概念——远山黛、牡丹醉、红梅映雪、月夜绀青、一点朱砂。原画与甲片同框,把三十年的画戴在指尖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 26'%3E%3Cpath d='M2 24 L9 4 L15 20 L21 4 L24.5 14' fill='none' stroke='%23EAE6DA' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='27' cy='23' r='3' fill='%23D8543C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<style>
+:root{--bg:#171A18;--cream:#EAE6DA;--muted:#98968A;--faint:#6E6E66;--seal:#D8543C;--gold:#C9A063;--mist:#8FA98F;--paper:#F4F0E5;--ink:#2A2822}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:"Songti SC","Noto Serif SC",serif;line-height:1.75}
+.kai{font-family:"Kaiti SC","STKaiti","Noto Serif SC",serif}
+.sans{font-family:"PingFang SC",-apple-system,sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid rgba(234,230,218,.08)}
+.wordmark{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);font-family:"PingFang SC",sans-serif;font-weight:600;font-size:17px}
+.wordmark i{font-style:normal;color:var(--seal)}
+nav .back{font-size:12.5px;letter-spacing:.14em;color:var(--muted);text-decoration:none;font-family:"PingFang SC",sans-serif}
+nav .back:hover{color:var(--cream)}
+a{color:inherit}
+.covers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:1.6rem}
+.covers figure{margin:0}
+.covers img{width:100%;border-radius:8px;display:block;box-shadow:0 16px 40px -20px rgba(0,0,0,.7)}
+.covers figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem;letter-spacing:.1em;text-align:center;font-family:"PingFang SC",sans-serif}
+.sitefoot{padding:2.6rem 0 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--faint);letter-spacing:.06em;font-family:"PingFang SC",sans-serif}
+.sitefoot a{color:var(--muted);text-decoration:none}
+.sitefoot a:hover{color:var(--cream)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 clamp(1.2rem,4vw,3rem)}
+
+.intro{padding:5rem 0 2.8rem;border-bottom:1px solid rgba(234,230,218,.08)}
+.intro .eyebrow{font-size:.75rem;letter-spacing:.55em;color:var(--gold);font-weight:500}
+.intro h1{font-size:clamp(1.8rem,4.2vw,2.7rem);font-weight:600;margin:.9rem 0 .3rem;letter-spacing:.1em}
+.intro p{max-width:40em;color:var(--muted);margin:.7rem 0 0}
+.intro p b{color:var(--cream);font-weight:600}
+
+.set{padding:3.6rem 0;border-bottom:1px solid rgba(234,230,218,.08)}
+.set-head{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.set-head .no{width:2.3rem;height:2.3rem;flex:none;border:1.5px solid var(--seal);color:var(--seal);display:grid;place-items:center;font-size:1.05rem;font-weight:600;border-radius:4px;transform:rotate(-2deg);align-self:center}
+.set-head h2{font-size:clamp(1.35rem,2.8vw,1.8rem);margin:0;font-weight:600;letter-spacing:.1em}
+.set-head .src{font-size:.8rem;color:var(--gold);letter-spacing:.1em}
+.hook{color:var(--muted);max-width:44em;margin:.5rem 0 1.6rem;font-size:.95rem}
+.hook b{color:var(--cream)}
+
+.set-body{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,1fr);gap:1.8rem;align-items:start}
+@media(max-width:780px){.set-body{grid-template-columns:1fr}}
+
+.tray{background:var(--paper);border-radius:10px;padding:2.2rem 1.6rem 1.7rem;position:relative;overflow:hidden;
+  box-shadow:0 18px 44px -22px rgba(0,0,0,.6)}
+.tray .nails{display:flex;justify-content:center;align-items:flex-end;gap:clamp(.5rem,2.2vw,1.1rem)}
+.tray svg.nail{display:block;filter:drop-shadow(0 6px 10px rgba(42,40,34,.22))}
+.tray .fingers{display:flex;justify-content:center;gap:clamp(.5rem,2.2vw,1.1rem);margin-top:.8rem}
+.tray .fingers span{width:60px;text-align:center;font-size:.62rem;letter-spacing:.18em;color:#8A8574;font-family:"PingFang SC",sans-serif}
+.tray .tname{position:absolute;top:14px;right:16px;writing-mode:vertical-rl;font-family:"Kaiti SC",serif;font-size:.8rem;letter-spacing:.34em;color:#6B675C}
+
+.side h3{font-size:.75rem;letter-spacing:.35em;color:var(--muted);font-weight:600;margin:1.3rem 0 .5rem;font-family:"PingFang SC",sans-serif}
+.side h3:first-child{margin-top:0}
+.chips{display:flex;gap:.45rem;flex-wrap:wrap}
+.chip{display:flex;flex-direction:column;gap:.25rem;font-size:.66rem;color:var(--muted);font-family:"PingFang SC",sans-serif}
+.chip i{width:52px;height:30px;border-radius:5px;display:block;border:1px solid rgba(234,230,218,.12)}
+.side ul{margin:.2rem 0 0;padding-left:1.1em}
+.side li{margin:.3rem 0;font-size:.88rem;color:var(--muted)}
+.side li b{color:var(--cream);font-weight:600}
+
+.outro{padding:3rem 0 5rem;color:var(--muted);font-size:.95rem}
+.outro b{color:var(--cream)}
+.outro .play{margin-top:.9rem;padding:1.1rem 1.3rem;border:1px dashed rgba(234,230,218,.18);border-radius:8px;background:rgba(234,230,218,.04)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <filter id="fInk" x="-15%" y="-30%" width="130%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.013 0.055" numOctaves="4" seed="7" result="w"/>
+    <feDisplacementMap in="SourceGraphic" in2="w" scale="4"/>
+  </filter>
+  <filter id="fDry" x="-15%" y="-40%" width="130%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="2" seed="4" result="g"/>
+    <feDisplacementMap in="SourceGraphic" in2="g" scale="2" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.018 0.09" numOctaves="3" seed="9" result="w"/>
+    <feDisplacementMap in="d" in2="w" scale="5"/>
+  </filter>
+  <filter id="fStamp" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.38" numOctaves="2" seed="12" result="noise"/>
+    <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.6 2.35" result="eat"/>
+    <feComposite in="SourceGraphic" in2="eat" operator="in" result="worn"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="5" result="w"/>
+    <feDisplacementMap in="worn" in2="w" scale="2"/>
+  </filter>
+  <filter id="fBlur6"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="fBlur3"><feGaussianBlur stdDeviation="3"/></filter>
+
+  <!-- 甲形:60×116 杏仁圆 -->
+  <path id="nailShape" d="M30,4 C45,4 55,17 55,40 C55,78 45,112 30,112 C15,112 5,78 5,40 C5,17 15,4 30,4 Z"/>
+  <clipPath id="nailClip"><use href="#nailShape"/></clipPath>
+  <!-- 高光 -->
+  <g id="gloss">
+    <ellipse cx="19" cy="30" rx="7" ry="17" fill="#FFFFFF" opacity=".34" filter="url(#fBlur3)" transform="rotate(-12 19 30)"/>
+    <ellipse cx="38" cy="78" rx="4" ry="10" fill="#FFFFFF" opacity=".14" filter="url(#fBlur3)"/>
+  </g>
+
+  <linearGradient id="gShilv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#DCE7DA"/><stop offset="100%" stop-color="#9DB49A"/>
+  </linearGradient>
+  <linearGradient id="gShilvDeep" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#C3D4C1"/><stop offset="100%" stop-color="#7C947B"/>
+  </linearGradient>
+  <linearGradient id="gOupink" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6E7E6"/><stop offset="100%" stop-color="#E8BFC2"/>
+  </linearGradient>
+  <linearGradient id="gTengzi" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E7DCE8"/><stop offset="100%" stop-color="#C3A9C8"/>
+  </linearGradient>
+  <linearGradient id="gGansei" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3E5468"/><stop offset="100%" stop-color="#22334A"/>
+  </linearGradient>
+  <linearGradient id="gGanseiLight" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#5A7186"/><stop offset="100%" stop-color="#2C405A"/>
+  </linearGradient>
+  <radialGradient id="gMoonGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#F0EAD8" stop-opacity=".5"/><stop offset="100%" stop-color="#F0EAD8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+</svg>
+
+<div class="wrap">
+  <nav>
+    <a class="wordmark" href="index.html">
+      <svg width="30" height="26" viewBox="0 0 30 26" aria-hidden="true"><path d="M2 24 L9 4 L15 20 L21 4 L24.5 14" fill="none" stroke="#EAE6DA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="23" r="2.6" fill="#D8543C"/></svg>
+      <span>double<i>mi</i></span>
+    </a>
+    <a class="back" href="gallery.html">← 回元素馆 · Gallery</a>
+  </nav>
+  <header class="intro">
+    <div class="eyebrow sans">元素馆 · 跨界 001</div>
+    <h1 class="kai">指尖临江仙 · 国画美甲</h1>
+    <p>把妈妈画了三十年的画,<b>戴在指尖</b>。五套概念,每套取一幅《临江仙画集》原作:底色从画里取样,主画指只画一个母题——山、月、梅、牡丹、印。页尾有<b>原画同框</b>:每套甲片回到它出生的那幅画上——一横幅,一指尖。</p>
+  </header>
+
+  <!-- 壹 远山黛 -->
+  <section class="set">
+    <div class="set-head"><span class="no kai">壹</span><h2 class="kai">远山黛</h2><span class="src">灵感 ·《临江仙山水》《碧水青峰》</span></div>
+    <p class="hook">石绿是今年最显白的绿。中指一座<b>雾里远山</b>,无名指一叶小舟,拇指整片山色——像把江南阴天戴在手上。</p>
+    <div class="set-body">
+      <figure class="tray">
+        <span class="tname">远 山 黛</span>
+        <div class="nails">
+          <svg class="nail" width="60" height="116" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gShilvDeep)"/><use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F2EDE2"/>
+              <path d="M0,84 C14,72 28,80 40,74 C50,70 56,76 60,73 L60,116 0,116 Z" fill="#9DB49A" opacity=".85"/>
+              <path d="M0,96 C16,88 34,94 48,90 C54,88 58,90 60,89 L60,116 0,116 Z" fill="#7C947B"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="128" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F2EDE2"/>
+              <g filter="url(#fInk)">
+                <path d="M6,62 C14,48 22,54 30,46 C38,39 46,48 56,42 L56,70 6,70 Z" fill="#5F7263" opacity=".8"/>
+                <path d="M0,74 C10,66 22,70 34,64 C44,60 52,64 60,60 L60,88 0,88 Z" fill="#8AA089" opacity=".55"/>
+              </g>
+              <rect x="0" y="58" width="60" height="34" fill="#F2EDE2" opacity=".25" filter="url(#fBlur6)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F2EDE2"/>
+              <g filter="url(#fInk)" transform="translate(12,58) scale(.5)">
+                <path d="M4,36 Q28,44 54,35 L50,28 Q28,34 9,29 Z" fill="#3A362C"/>
+                <path d="M30,4 L30,28" stroke="#3A362C" stroke-width="2" fill="none"/>
+                <path d="M28,6 Q21,15 24,27 L34,25 Q31,15 34,6 Z" fill="#C9A063" opacity=".95"/>
+              </g>
+              <g stroke="#8AA089" stroke-width="1.1" fill="none" opacity=".6" filter="url(#fInk)">
+                <path d="M14,92 q9,-2 18,0"/><path d="M28,99 q8,-2 16,0" opacity=".6"/>
+              </g>
+              <rect x="38" y="16" width="10" height="10" rx="2" fill="#C13A28" filter="url(#fStamp)" transform="rotate(-4 43 21)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="52" height="104" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gShilv)"/><use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+        </div>
+        <div class="fingers"><span>拇 · 山色</span><span>食 · 山尖法式</span><span>中 · 雾山</span><span>无名 · 孤舟印</span><span>小 · 石绿</span></div>
+      </figure>
+      <aside class="side">
+        <h3>色卡</h3>
+        <div class="chips">
+          <span class="chip"><i style="background:#7C947B"></i>石绿深</span>
+          <span class="chip"><i style="background:#9DB49A"></i>石绿</span>
+          <span class="chip"><i style="background:#F2EDE2"></i>宣纸奶白</span>
+          <span class="chip"><i style="background:#C13A28"></i>朱砂点</span>
+          <span class="chip"><i style="background:#C9A063"></i>赭金帆</span>
+        </div>
+        <h3>工艺</h3>
+        <ul><li><b>雾山</b>:两层薄涂晕染+奶白雾罩(磨砂封层更像宣纸)</li><li><b>孤舟</b>:细笔两笔船身,赭金一笔帆,右上点一枚红印</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 贰 牡丹醉 -->
+  <section class="set">
+    <div class="set-head"><span class="no kai">贰</span><h2 class="kai">牡丹醉</h2><span class="src">灵感 ·《临江仙牡丹》《国色天香》</span></div>
+    <p class="hook">粉紫两色牡丹是画集里最艳的一幅。花瓣用<b>晕染腮红法</b>,黄蕊用金箔点——富贵但不俗,春节和婚宴的王牌。</p>
+    <div class="set-body">
+      <figure class="tray">
+        <span class="tname">牡 丹 醉</span>
+        <div class="nails">
+          <svg class="nail" width="60" height="116" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gOupink)"/><use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F5F0E6"/>
+              <g filter="url(#fBlur6)">
+                <ellipse cx="30" cy="72" rx="24" ry="20" fill="#E8A7B4" opacity=".8"/>
+                <ellipse cx="22" cy="62" rx="12" ry="10" fill="#D9899F" opacity=".7"/>
+              </g>
+              <g fill="#C9A063"><circle cx="28" cy="68" r="1.6"/><circle cx="34" cy="64" r="1.4"/><circle cx="32" cy="72" r="1.3"/><circle cx="38" cy="69" r="1.2"/></g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="128" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F5F0E6"/>
+              <g filter="url(#fBlur3)">
+                <circle cx="24" cy="58" r="12" fill="#E39DAD"/>
+                <circle cx="38" cy="52" r="10" fill="#CB8BA8" opacity=".9"/>
+                <circle cx="34" cy="68" r="11" fill="#D9899F" opacity=".85"/>
+                <circle cx="18" cy="72" r="8" fill="#C3A9C8" opacity=".8"/>
+              </g>
+              <g fill="#C9A063"><circle cx="29" cy="60" r="1.7"/><circle cx="33" cy="57" r="1.4"/><circle cx="31" cy="64" r="1.4"/><circle cx="36" cy="62" r="1.2"/><circle cx="26" cy="63" r="1.2"/></g>
+              <g stroke="#3B382F" stroke-width="1.3" fill="none" stroke-linecap="round" filter="url(#fInk)" opacity=".85">
+                <path d="M30,80 C28,92 30,100 34,108"/>
+                <path d="M30,88 C24,86 20,88 16,94"/>
+                <path d="M32,96 C38,94 42,96 46,100"/>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gTengzi)"/>
+              <rect x="24" y="20" width="11" height="11" rx="2" fill="#C13A28" filter="url(#fStamp)" transform="rotate(-4 29 25)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="52" height="104" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F5F0E6"/>
+              <g fill="#C9A063"><circle cx="30" cy="34" r="2"/></g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+        </div>
+        <div class="fingers"><span>拇 · 藕粉</span><span>食 · 花影腮红</span><span>中 · 牡丹主画</span><span>无名 · 藤紫钤印</span><span>小 · 金蕊一点</span></div>
+      </figure>
+      <aside class="side">
+        <h3>色卡</h3>
+        <div class="chips">
+          <span class="chip"><i style="background:#E8A7B4"></i>牡丹粉</span>
+          <span class="chip"><i style="background:#CB8BA8"></i>紫牡丹</span>
+          <span class="chip"><i style="background:#C3A9C8"></i>藤紫</span>
+          <span class="chip"><i style="background:#F5F0E6"></i>奶白</span>
+          <span class="chip"><i style="background:#C9A063"></i>金蕊</span>
+        </div>
+        <h3>工艺</h3>
+        <ul><li><b>花瓣</b>:腮红胶湿画法晕染,边缘留水痕才像没骨画</li><li><b>叶脉</b>:黑胶细笔三两笔,不要多;<b>金蕊</b>用金箔胶点粒</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 叁 红梅映雪 -->
+  <section class="set">
+    <div class="set-head"><span class="no kai">叁</span><h2 class="kai">红梅映雪</h2><span class="src">灵感 ·《瓶插红梅》</span></div>
+    <p class="hook">画里那根<b>方折的墨枝</b>是灵魂——美甲上也要折出棱角,梅花才有骨。奶白当雪,一指纯朱砂压阵,秋冬第一红。</p>
+    <div class="set-body">
+      <figure class="tray">
+        <span class="tname">红 梅 映 雪</span>
+        <div class="nails">
+          <svg class="nail" width="60" height="116" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F6F2E8"/>
+              <g stroke="#3B382F" stroke-width="2.4" fill="none" stroke-linecap="round" filter="url(#fDry)">
+                <path d="M6,110 L22,84 L18,72 L36,52"/>
+              </g>
+              <g filter="url(#fInk)">
+                <circle cx="40" cy="46" r="4.6" fill="#CE5B52"/><circle cx="47" cy="42" r="4" fill="#CE5B52"/><circle cx="46" cy="51" r="4.2" fill="#CE5B52"/><circle cx="43" cy="46" r="2.6" fill="#A83226"/>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#C0392B"/>
+              <rect width="60" height="116" fill="url(#gMoonGlow)" opacity=".18"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="128" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F6F2E8"/>
+              <g stroke="#3B382F" fill="none" stroke-linecap="round" filter="url(#fDry)">
+                <path d="M60,16 L38,32 L42,44 L20,60 L8,74" stroke-width="2.8"/>
+                <path d="M20,60 L12,52" stroke-width="1.6"/>
+              </g>
+              <g filter="url(#fInk)">
+                <g fill="#CE5B52"><circle cx="30" cy="50" r="4.4"/><circle cx="24" cy="45" r="3.8"/><circle cx="25" cy="54" r="3.9"/><circle cx="19" cy="49" r="3.2"/><circle cx="26" cy="49" r="2.4" fill="#A83226"/></g>
+                <g stroke="#2A2822" stroke-width=".9" opacity=".8" fill="none"><path d="M28,47 l3,-5 M29,50 l5,-2"/></g>
+                <ellipse cx="42" cy="82" rx="2.8" ry="1.8" fill="#E8A09A" transform="rotate(-18 42 82)"/>
+                <ellipse cx="18" cy="96" rx="2.4" ry="1.6" fill="#E8A09A" transform="rotate(14 18 96)"/>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F6F2E8"/>
+              <g filter="url(#fInk)">
+                <ellipse cx="20" cy="40" rx="3" ry="2" fill="#E8A09A" transform="rotate(-20 20 40)"/>
+                <ellipse cx="38" cy="62" rx="2.6" ry="1.7" fill="#E8A09A" transform="rotate(16 38 62)"/>
+                <ellipse cx="26" cy="88" rx="2.8" ry="1.8" fill="#CE5B52" transform="rotate(-10 26 88)"/>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="52" height="104" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F6F2E8"/>
+              <rect x="24" y="22" width="11" height="11" rx="2" fill="#C13A28" filter="url(#fStamp)" transform="rotate(-4 29 27)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+        </div>
+        <div class="fingers"><span>拇 · 斜枝</span><span>食 · 纯朱砂</span><span>中 · 折枝主画</span><span>无名 · 落瓣</span><span>小 · 钤印</span></div>
+      </figure>
+      <aside class="side">
+        <h3>色卡</h3>
+        <div class="chips">
+          <span class="chip"><i style="background:#C0392B"></i>朱砂正红</span>
+          <span class="chip"><i style="background:#CE5B52"></i>梅红</span>
+          <span class="chip"><i style="background:#E8A09A"></i>落瓣粉</span>
+          <span class="chip"><i style="background:#F6F2E8"></i>雪白</span>
+          <span class="chip"><i style="background:#3B382F"></i>枯墨</span>
+        </div>
+        <h3>工艺</h3>
+        <ul><li><b>墨枝</b>:细笔要"折"不要"弯"——两笔一个转角,学画里的方折</li><li><b>落瓣</b>:椭圆点两三片就停,留白是雪</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 肆 月夜绀青 -->
+  <section class="set">
+    <div class="set-head"><span class="no kai">肆</span><h2 class="kai">月夜绀青</h2><span class="src">灵感 ·《双兔望月》</span></div>
+    <p class="hook">画里那轮黄月亮,搬到无名指上发光。绀青渐变+一粒奶白圆月+金箔碎星,晚上聚会灯一打,<b>整只手是夜空</b>。</p>
+    <div class="set-body">
+      <figure class="tray" style="background:#202B38">
+        <span class="tname" style="color:#8FA6B8">月 夜 绀 青</span>
+        <div class="nails">
+          <svg class="nail" width="60" height="116" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gGansei)"/>
+              <g fill="#C9A063"><circle cx="18" cy="36" r="1"/><circle cx="40" cy="58" r=".8"/><circle cx="28" cy="84" r="1.1"/><circle cx="46" cy="92" r=".7"/></g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(0,0,0,.25)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#EFEAE0"/>
+              <path d="M0,78 C14,68 30,74 44,68 C52,66 57,68 60,67 L60,116 0,116 Z" fill="#2C405A" opacity=".9"/>
+              <path d="M0,78 C14,68 30,74 44,68 C52,66 57,68 60,67" stroke="#8FA6B8" stroke-width=".8" fill="none" opacity=".5"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="128" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gGansei)"/>
+              <circle cx="30" cy="46" r="22" fill="url(#gMoonGlow)"/>
+              <circle cx="30" cy="46" r="11" fill="#EFE9D6" opacity=".97"/>
+              <g stroke="#1B2838" filter="url(#fInk)" opacity=".9">
+                <path d="M24,50 C26.5,46.5 29.5,46.5 31.5,49" fill="none" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M31.5,49 C33.5,46 36.5,46.5 38.5,49.5" fill="none" stroke-width="1.1" stroke-linecap="round"/>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(0,0,0,.25)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="url(#gGanseiLight)"/>
+              <rect x="24" y="20" width="11" height="11" rx="2" fill="#D8543C" filter="url(#fStamp)" transform="rotate(-4 29 25)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(0,0,0,.25)"/>
+          </svg>
+          <svg class="nail" width="52" height="104" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#EFEAE0"/>
+              <path d="M0,86 L60,74 L60,116 L0,116 Z" fill="#C9A063" opacity=".85"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+        </div>
+        <div class="fingers"><span style="color:#8FA6B8">拇 · 星子</span><span style="color:#8FA6B8">食 · 山影法式</span><span style="color:#8FA6B8">中 · 雁过月</span><span style="color:#8FA6B8">无名 · 钤印</span><span style="color:#8FA6B8">小 · 金箔尖</span></div>
+      </figure>
+      <aside class="side">
+        <h3>色卡</h3>
+        <div class="chips">
+          <span class="chip"><i style="background:#3E5468"></i>绀青</span>
+          <span class="chip"><i style="background:#22334A"></i>夜蓝</span>
+          <span class="chip"><i style="background:#EFE9D6"></i>月白</span>
+          <span class="chip"><i style="background:#C9A063"></i>金箔</span>
+          <span class="chip"><i style="background:#D8543C"></i>朱砂</span>
+        </div>
+        <h3>工艺</h3>
+        <ul><li><b>月亮</b>:白胶厚涂一粒圆,周围罩一圈珠光当月晕</li><li><b>雁</b>:黑胶最细笔,两笔一只,飞过月面才有戏</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 伍 一点朱砂 -->
+  <section class="set">
+    <div class="set-head"><span class="no kai">伍</span><h2 class="kai">一点朱砂</h2><span class="src">灵感 · 画上落款的印</span></div>
+    <p class="hook">给不敢戴颜色的人:全手裸杏,只在无名指<b>盖一枚印</b>。通勤零压力,伸手全是故事——"这是我妈落款用的印"。转发率最高的往往是最素的。</p>
+    <div class="set-body">
+      <figure class="tray">
+        <span class="tname">一 点 朱 砂</span>
+        <div class="nails">
+          <svg class="nail" width="60" height="116" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#EFDFD3"/><use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F0E4DA"/><use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="128" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F0E4DA"/>
+              <path d="M8,100 C24,96 40,98 54,95" stroke="#B9A894" stroke-width="1.4" fill="none" stroke-linecap="round" filter="url(#fDry)" opacity=".7"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="60" height="122" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#F6F1E8"/>
+              <g filter="url(#fStamp)" transform="rotate(-3 30 58)">
+                <rect x="17" y="43" width="26" height="26" rx="3" fill="#BE3A26"/>
+                <text x="30" y="63" text-anchor="middle" font-size="19" font-family="Kaiti SC,STKaiti,serif" fill="#F2E9DA" stroke="#F2E9DA" stroke-width=".6" paint-order="stroke">何</text>
+              </g>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+          <svg class="nail" width="52" height="104" viewBox="0 0 60 116">
+            <g clip-path="url(#nailClip)"><rect width="60" height="116" fill="#EFDFD3"/>
+              <path d="M5,30 C20,24 40,24 55,30 L55,4 L5,4 Z" fill="#C0392B" opacity=".9" transform="translate(0,0)"/>
+              <use href="#gloss"/></g>
+            <use href="#nailShape" fill="none" stroke="rgba(42,40,34,.14)"/>
+          </svg>
+        </div>
+        <div class="fingers"><span>拇 · 裸杏</span><span>食 · 奶杏</span><span>中 · 枯笔一痕</span><span>无名 · 姓氏印</span><span>小 · 朱砂甲尖</span></div>
+      </figure>
+      <aside class="side">
+        <h3>色卡</h3>
+        <div class="chips">
+          <span class="chip"><i style="background:#EFDFD3"></i>裸杏</span>
+          <span class="chip"><i style="background:#F0E4DA"></i>奶杏</span>
+          <span class="chip"><i style="background:#F6F1E8"></i>印面白</span>
+          <span class="chip"><i style="background:#BE3A26"></i>印泥红</span>
+        </div>
+        <h3>工艺</h3>
+        <ul><li><b>姓氏印</b>:方形红底+白字,边缘故意做斑驳(海绵按压);<b>可替换任何姓</b>——这是能接单定制的点</li><li>其余全裸色,一次成型</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="set" style="border-bottom:none">
+    <div class="set-head"><span class="no kai">同</span><h2 class="kai">原画同框</h2><span class="src">概念封面 · 画与甲片一处看</span></div>
+    <p class="hook">每一套都回到它出生的那幅画上:甲片摆在原作上拍板定色。<b>左手是她的三十年,右手是这个秋天。</b></p>
+    <div class="covers">
+      <figure><img src="art/nails-cover-meihua.jpg" alt="红梅映雪甲片与《瓶插红梅》原画同框" loading="lazy"><figcaption>红梅映雪 ×《瓶插红梅》</figcaption></figure>
+      <figure><img src="art/nails-cover-shan.jpg" alt="远山黛甲片与《临江仙山水》原画同框" loading="lazy"><figcaption>远山黛 ×《临江仙山水》</figcaption></figure>
+      <figure><img src="art/nails-cover-yue.jpg" alt="月夜绀青甲片与《双兔望月》原画同框" loading="lazy"><figcaption>月夜绀青 ×《双兔望月》</figcaption></figure>
+    </div>
+  </section>
+
+  <footer class="sitefoot">
+    <span>© 2026 DoubleMi · Made in Zürich</span>
+    <span>原画 · 何江《临江仙画集》</span>
+    <a href="gallery.html">元素馆</a>
+  </footer>
+</div>
+</body>
+</html>
