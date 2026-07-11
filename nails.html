@@ -24,10 +24,13 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0
 nav .back{font-size:12.5px;letter-spacing:.14em;color:var(--muted);text-decoration:none;font-family:"PingFang SC",sans-serif}
 nav .back:hover{color:var(--cream)}
 a{color:inherit}
-.covers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:1.6rem}
-.covers figure{margin:0}
-.covers img{width:100%;border-radius:8px;display:block;box-shadow:0 16px 40px -20px rgba(0,0,0,.7)}
-.covers figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem;letter-spacing:.1em;text-align:center;font-family:"PingFang SC",sans-serif}
+.plates{display:grid;grid-template-columns:repeat(auto-fit,minmax(236px,1fr));gap:1.4rem;margin-top:1.6rem}
+.plate{margin:0;background:#F2EDE1;border-radius:5px;padding:clamp(18px,2.6vw,30px) clamp(16px,2.2vw,26px) 16px;
+  box-shadow:0 18px 44px -24px rgba(0,0,0,.7)}
+.plate img{width:100%;display:block;border:1px solid rgba(42,40,34,.16);box-shadow:0 10px 26px -14px rgba(42,40,34,.45)}
+.plate .dots{display:flex;gap:9px;justify-content:center;margin-top:16px}
+.plate .dots i{width:15px;height:15px;border-radius:50%;display:block;border:1px solid rgba(42,40,34,.14)}
+.plate figcaption{text-align:center;font-family:"Kaiti SC","STKaiti","Noto Serif SC",serif;color:#5A5448;font-size:.76rem;letter-spacing:.14em;margin-top:9px}
 .sitefoot{padding:2.6rem 0 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--faint);letter-spacing:.06em;font-family:"PingFang SC",sans-serif}
 .sitefoot a{color:var(--muted);text-decoration:none}
 .sitefoot a:hover{color:var(--cream)}
@@ -138,7 +141,7 @@ a{color:inherit}
   <header class="intro">
     <div class="eyebrow sans">元素馆 · 跨界 001</div>
     <h1 class="kai">指尖临江仙 · 国画美甲</h1>
-    <p>把妈妈画了三十年的画,<b>戴在指尖</b>。五套概念,每套取一幅《临江仙画集》原作:底色从画里取样,主画指只画一个母题——山、月、梅、牡丹、印。页尾有<b>原画同框</b>:每套甲片回到它出生的那幅画上——一横幅,一指尖。</p>
+    <p>把妈妈画了三十年的画,<b>戴在指尖</b>。五套概念,每套取一幅《临江仙画集》原作:底色从画里取样,主画指只画一个母题——山、月、梅、牡丹、印。页尾附<b>原作图版</b>:每套的颜色,都能在画里找到出处。</p>
   </header>
 
   <!-- 壹 远山黛 -->
@@ -466,12 +469,24 @@ a{color:inherit}
   </section>
 
   <section class="set" style="border-bottom:none">
-    <div class="set-head"><span class="no kai">同</span><h2 class="kai">原画同框</h2><span class="src">概念封面 · 画与甲片一处看</span></div>
-    <p class="hook">每一套都回到它出生的那幅画上:甲片摆在原作上拍板定色。<b>左手是她的三十年,右手是这个秋天。</b></p>
-    <div class="covers">
-      <figure><img src="art/nails-cover-meihua.jpg" alt="红梅映雪甲片与《瓶插红梅》原画同框" loading="lazy"><figcaption>红梅映雪 ×《瓶插红梅》</figcaption></figure>
-      <figure><img src="art/nails-cover-shan.jpg" alt="远山黛甲片与《临江仙山水》原画同框" loading="lazy"><figcaption>远山黛 ×《临江仙山水》</figcaption></figure>
-      <figure><img src="art/nails-cover-yue.jpg" alt="月夜绀青甲片与《双兔望月》原画同框" loading="lazy"><figcaption>月夜绀青 ×《双兔望月》</figcaption></figure>
+    <div class="set-head"><span class="no kai">图</span><h2 class="kai">原作图版</h2><span class="src">色,出自此画</span></div>
+    <p class="hook">三幅原作,按画册图版装裱;画下一行圆点,是各套甲片取走的颜色。<b>先有画,后有色;先有她,后有这一切。</b></p>
+    <div class="plates">
+      <figure class="plate">
+        <img src="art/plate-meihua.jpg" alt="何江《瓶插红梅》" loading="lazy">
+        <span class="dots" aria-hidden="true"><i style="background:#C0392B"></i><i style="background:#CE5B52"></i><i style="background:#E8A09A"></i><i style="background:#F6F2E8"></i><i style="background:#3B382F"></i></span>
+        <figcaption>图版一 ·《瓶插红梅》→ 红梅映雪</figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="art/fan-shanshui.jpg" alt="何江《临江仙山水》" loading="lazy">
+        <span class="dots" aria-hidden="true"><i style="background:#7C947B"></i><i style="background:#9DB49A"></i><i style="background:#F2EDE2"></i><i style="background:#C9A063"></i><i style="background:#C13A28"></i></span>
+        <figcaption>图版二 ·《临江仙山水》→ 远山黛</figcaption>
+      </figure>
+      <figure class="plate">
+        <img src="art/fan-mengyue.jpg" alt="何江《双兔望月》" loading="lazy">
+        <span class="dots" aria-hidden="true"><i style="background:#3E5468"></i><i style="background:#22334A"></i><i style="background:#EFE9D6"></i><i style="background:#C9A063"></i><i style="background:#D8543C"></i></span>
+        <figcaption>图版三 ·《双兔望月》→ 月夜绀青</figcaption>
+      </figure>
     </div>
   </section>
 
